@@ -1,4 +1,4 @@
-# Snake Game JavaScript 🐍 𓆚
+# Snake Game JavaScript 🐍
 Projeto de um Snake Game, utilizando JavaScript, HTML e CSS.
 
 <div>
