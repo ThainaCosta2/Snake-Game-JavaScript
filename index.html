@@ -1,0 +1,74 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/Snakeicon.png" type="image/png">
+  <script src="scripts/script.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Orbitron:wght@400;700;900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <title>Snake Game</title>
+</head>
+<body>
+  <div class="popup" id="lose">
+    <h3>Você Perdeu!</h3>
+    <button id="new-game">Jogar Novamente?</button>
+  </div>
+
+  <div class="popup" id="rules">
+    <div class="exit"></div>
+    <h3>Regras do Jogo</h3>
+    <ul>
+    <li>Inicie o jogo pressionando as teclas de seta para CIMA, para ESQUERDA ou para DIREITA</li>
+    <li>Mova sua cobra pelo mapa com as teclas de seta para CIMA, para BAIXO, para ESQUERDA ou para DIREITA</li>
+    <li>Coma a bola para crescer e ganhar pontos</li>
+    <li>Tente sobreviver o máximo possível, evitando esbarrar em si mesma</li>
+    </ul>
+  </div>
+<!-- música de fundo -->
+  <audio id="music" src="audio/CFCF - Slippery Plastic Euphoric.mp3"></audio>
+  <!-- som da comida -->
+  <audio id="food" src="audio/food.wav"></audio>
+  <!-- som quando perde -->
+  <audio id="lose-sound" src="audio/lose.wav"></audio>
+
+  <!-- Principal -->
+  <header>
+    <h1>Snake Game 🐍</h1>
+  </header>
+
+  <!-- Contêiner para armazenar as 2 barras laterais e a grade[um elemento pai flexível] -->
+  <section id="container">
+    <!-- sidebar - barra lateral esquerda -->
+    <aside id="sidebar">
+      <div class="inside">
+        <div id="flex-child-one">
+          <h2>Pontuação</h2>
+          <div id="score-span"></div>
+        </div>
+        <div id="flex-child-one">
+          <h2>Música</h2>
+          <button id="musicbtn">Play</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Grade -->
+    <div id="grid">
+      <!-- Items de grade aqui -->
+      
+    </div>
+    <!-- sidebar - barra lateral direita -->
+    <aside id="sidebar" class="right">
+      <div class="inside">
+        <!-- <button id="start">Iniciar</button> -->
+        <!-- <button id="pause">Pausar</button> -->
+        <button id="rules-btn">Regras</button>
+        <button id="new">Novo Jogo</button>
+      </div>
+    </aside>
+  </section>
+</body>
+</html>
