@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(255, 157, 72); */
+  background: radial-gradient(circle, rgb(255, 72, 249) 40%, rgb(157, 96, 255) 100%);
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Concert One', cursive;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  transform: scaleX(1) scaleY(0.7);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 50px;
+  padding: 12px 30px 15px 30px;
+  margin: 0px auto 10px auto;
+  font-size: 3em;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 0px, rgba(255, 255, 255, 0.3) 10px 0px, rgba(255, 255, 255, 0.2) 15px 0px, rgba(255, 255, 255, 0.1) 20px 0px, rgba(255, 255, 255, 0.05) 25px 0px,
+  rgba(255, 255, 255, 0.4) -5px 0px, rgba(255, 255, 255, 0.3) -10px 0px, rgba(255, 255, 255, 0.2) -15px 0px, rgba(255, 255, 255, 0.1) -20px 0px, rgba(255, 255, 255, 0.05) -25px 0px;
+  /* text-shadow: rgba(68, 96, 255, 0.4) 5px 0px, rgba(255, 255, 255, 0.3) 10px 0px, rgba(255, 255, 255, 0.2) 15px 0px, rgba(255, 255, 255, 0.1) 20px 0px, rgba(255, 255, 255, 0.05) 25px 0px,
+  rgba(68, 96, 255, 0.4) -5px 0px, rgba(255, 255, 255, 0.3) -10px 0px, rgba(255, 255, 255, 0.2) -15px 0px, rgba(255, 255, 255, 0.1) -20px 0px, rgba(255, 255, 255, 0.05) -25px 0px; */
+  /* box-shadow: rgba(255, 255, 255, 1) 25px 0px 10px, rgba(255, 255, 255, 1) -25px 0px 10px; */
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  text-decoration: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0px;
+  font-size: 2em;
+  border-bottom: 2px solid rgba(157, 96, 255, 1);
+  padding-bottom: 10px;
+}
+
+/* Grid */
+#grid {
+  background-color: rgb(169, 140, 255);
+  border: 1px solid rgba(255, 255, 255, 1);
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+  /* margin-top: -100px; */
+}
+
+#grid div {
+  min-width: 5%;
+  min-height: 5%;
+  max-width: 10%;
+  max-height: 10%;
+  border: 0.1px solid rgba(0, 34, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgba(255, 255, 255, 0.7);
+  border-radius: 0px;
+  font-size: 0.7em;
+}
+
+.snake {
+  background-color: rgb(64, 255, 102);
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.food {
+  
+  transition: all 0.5s;
+  border-radius: 100px;
+  background-image: url("../assets/BallRed.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.inside {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+  /* height: 65%; */
+  background-color: rgb(169, 140, 255);
+}
+
+/* Score div */
+#flex-child-one {
+  /* border: 1px solid; */
+  text-align: center;
+  border-radius: 1px;
+  /* margin: 10px auto; */
+  width: 180px;
+  /* height:20%; */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex-child-one h2 {
+  /* font-size: 15px; */
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(157, 96, 255, 1);
+  padding-bottom: 5px;
+  color: rgb(0, 0, 0, 0.7);
+}
+#flex-child-one div {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(0, 0, 0, 0.7);
+  border: 1px solid rgba(157, 96, 255, 0.5);
+  padding: 5px;
+  width: 100px;
+  margin: 5px auto ;
+}
+
+#flex-child-one:nth-child(2) {
+  margin-top: 10px;
+}
+#flex-child-one:nth-child(2) h2 {
+  font-size: 1em;
+  border: 0px dotted rgba(255, 72, 249, 0.4);
+  padding: 5px 30px;
+  background-color: rgba(157, 96, 255, 0.3);
+}
+.right button {
+  margin: 0px 0px 10px 0px;
+}
+.right #new {
+  margin: 0px;
+  padding: 10px 20px;
+  width: 180px;
+}
+
+button#musicbtn {
+  border-radius: 100px;
+  background-color: rgba(255, 0, 208, 0.5);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 1em;
+  padding: 20px 10px;
+  transition: all 0.1s ease-in;
+  color: white;
+}
+
+#musicbtn:active {
+  transform: scaleX(0.9) scaleY(0.9);
+  background-color: rgba(255, 0, 208, 0.7);
+}
+
+button {
+  margin: 10px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  padding: 10px 20px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(157, 96, 255);
+  font-family: 'Play', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+button:active {
+  background-color: rgba(112, 46, 113, 0.5);
+}
+
+button#pause {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* pupup class */
+.popup {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  width: 40%;
+  text-align: left;
+  padding: 30px;
+  border-radius: 2px;
+  color: rgb(157, 96, 255);
+  transition: all 0.2s ease-in;
+  border: 2px solid rgb(157, 96, 255);
+  box-shadow: 0px 0px 5px rgb(205, 161, 255);
+}
+/* rules popup */
+#rules {
+  visibility: hidden;
+  transform: scaleX(0.8) scaleY(0.8);
+  /* transition: all 0.2s ease-in; */
+}
+/* popup exit button */
+.exit {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -50px;
+  padding:10px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.2s ease-in;
+  border: 2px solid rgb(157, 96, 255);
+  box-shadow: 0px 0px 5px rgb(205, 161, 255);
+}
+
+.exit:active {
+  transform: scaleX(2) scaleY(2);
+  background-color: rgb(205, 161, 255);
+}
+
+
+
+.exit::before, .exit::after {
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  content: '';
+  background-color: rgb(157, 96, 255);
+  border-radius: 50px;
+}
+.exit::before {
+  transform: rotate(45deg);
+}
+.exit::after {
+  transform: rotate(-45deg);
+}
+
+.exit:active::before, .exit:active::after {
+  background-color: rgb(255, 0, 0);
+}
+
+/* lose popup */
+.popup#lose {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(0.7) scaleY(0.7);
+}
+/* new game button */
+button#new-game {
+  width: 200px;
+  margin-top: 20px;
+  background-color: rgb(255, 72, 249);
+  color: rgb(255, 255, 255);
+}
+
+button#new-game:active {
+  background-color: rgb(157, 96, 255);
+  transform: scaleX(0.95) scaleY(0.95);
+}
+
+.popup ul {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 20px 20px 20px 60px;
+  font-weight: 700;
+  transform: scaleX(1) scaleY(0.7);
+  font-size: 1.5em;
+}
