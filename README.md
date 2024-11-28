@@ -1,6 +1,9 @@
 # Snake Game JavaScript 🐍
 Projeto de um Snake Game, utilizando JavaScript, HTML e CSS.
 
+# Link do Jogo
+Acesse o<a href= "https://thainacosta2.github.io/Snake-Game-JavaScript/" target="_blank">Jogo</a>
+
 <div>
   <img src="https://github.com/user-attachments/assets/bad81e3f-69d3-4753-930c-c1760deef891" />
 
