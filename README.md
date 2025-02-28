@@ -1,4 +1,6 @@
 # Snake Game JavaScript 🐍
+O projeto visa desenvolver o clássico "Jogo da Cobrinha" utilizando JavaScript, HTML e CSS. O jogador deve coletar a bola para fazer a cobra crescer, enquanto evita colidir com seu próprio corpo. A intenção é recriar a experiência do famoso jogo dos celulares da Nokia, disponível para ser jogado no navegador.
+
 Projeto de um Snake Game, utilizando **JavaScript, HTML e CSS.**
 
 Clique aqui para acessar o link do jogo ➡️<a href= "https://thainacosta2.github.io/Snake-Game-JavaScript/" target="_blank">Snake Game</a>
