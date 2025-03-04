@@ -30,7 +30,8 @@ Clique aqui para acessar o link do jogo ➡️<a href= "https://thainacosta2.git
 ## Tecnologias < / >
   As seguintes ferramentas que foram usadas na construção do projeto:
 <table>
-   <tbody>
+  <thead>
+    <tbody>
       <tr>
         <td>JavaScript ｡🇯‌🇸
       </tr>
@@ -40,7 +41,8 @@ Clique aqui para acessar o link do jogo ➡️<a href= "https://thainacosta2.git
       <tr>
         <td>CSS ⚙️</td>
       </tr>
-    </tbody>‌
+    </tbody>
+  ‌</thead>
 </table>
 
 </div>
