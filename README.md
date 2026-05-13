@@ -10,7 +10,7 @@ Clique aqui para acessar o link do jogo ➡️<a href= "https://thainacosta2.git
 # Sobre o Projeto 📄
 <div>
   <ul>
-    <li>O projeto consiste na construção do clássico "Jogo da Cobrinha", popularizado por celulares da Nokia que vinham com o jogo já instalado
+    <li>O projeto consiste na construção do clássico "Jogo da Cobrinha", popularizado por celulares da Nokia que vinham com o jogo já instalado.
     <li>O objetivo é coletar a bola para fazer a cobra crescer, evitando colisões com o próprio corpo.
     <li>Com esse projeto busquei recriar o jogo utilizando JavaScript, para ser jogado através do seu navegador.
     </li>
